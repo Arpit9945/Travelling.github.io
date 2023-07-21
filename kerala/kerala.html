@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    :root{
+    --background:#3C343D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+.background{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.gallary{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 800px;
+    animation-name: left;
+    animation-duration: 3s;
+}
+
+@keyframes left{
+    0%{
+        margin-left: 50rem;
+        gap: 60px;
+    }
+    35%{
+        /* margin-left: 50px; */
+        /* gap: 100px; */
+        
+    }
+    60%{
+        /* margin-left: 30px; */
+        /* gap: 50px; */
+    }
+    75%{
+        /* margin-left: 20px; */
+        /* gap: 20px; */
+    }
+    90%{
+        /* margin-left: 1px; */
+        /* gap: 16px; */
+    }
+    100%{
+        margin-left: 0;
+        gap: 16px;
+    }
+    
+} 
+
+
+.card{
+    position: relative;
+    left: 0px;
+    width: 80px;
+    border-radius: 16px;
+    height: 360px;
+    overflow: hidden;
+    background-color: var(--background);
+    transition: 1s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+    animation-name: bga;
+    animation-duration: 5s;
+}
+
+@keyframes bga{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        /* opacity: 0.5; */
+    }
+    75%{
+       /* opacity: 0.9; */
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}  
+
+
+.card:hover{
+    flex: 30;
+    /* font-weight: bold; */
+    cursor: pointer;
+    border-radius: 20px;
+}
+img{
+    width: 40rem;
+    height: 25rem;
+}
+
+</style>
+
+<body>
+
+    <span class="background">
+        <h1 style="font-weight: bold; font-family: 'Pacifico', cursive; color: red;">KERALA</h1>
+        <section class="gallary">
+            <article class="card">
+            
+                    <img src="kerala1.jpg" alt="preview" title="preview">
+                
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="kerala2.jpg" alt="preview" title="preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="kerala3.jpg" alt="preview" title="preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="kerala4.jpg" alt="preview" title="preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="kerala5.jpg"
+                     alt="preview"
+                     title="preview">
+                </figure>
+            </article>
+        
+            <article class="card">
+                <figure>
+                    <img src="kerala6.jpg"
+                     alt="preview"
+                     title="preview">
+                </figure>
+            </article>
+        
+            <article class="card">
+                <figure>
+                    <img src="kerala7.jpg"
+                     alt="preview"
+                     title="preview">
+                </figure>
+            </article>
+        
+            <article class="card">
+                <figure>
+                    <img src="kerala8.jpg"
+                     alt="preview"
+                     title="preview">
+                </figure>
+            </article>
+            
+        </section>
+    </span>
+
+</body>
+
+</html>
